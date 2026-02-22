@@ -1,0 +1,40 @@
+stages:
+  - test
+  - security
+
+# Gemeinsame Basis-Konfiguration 
+.python_base: &python_base
+  image: python:3.12-slim
+  before_script:
+    - pip install --cache-dir .pip-cache -r requirements.txt
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    paths:
+      - .pip-cache/
+
+# Simpler Test: Prüft nur, ob der Python-Code überhaupt startbar ist (keine Syntax-Fehler)
+syntax_check:
+  <<: *python_base
+  stage: test
+  script:
+    - python -m py_compile app.py rag_core.py
+
+# DevSecOps Sicherheitsnetz
+bandit_security_scan:
+  <<: *python_base
+  stage: security
+  needs: ["syntax_check"] # Läuft erst, wenn der Syntax-Check grün ist
+  script:
+    - pip install bandit pip-audit
+    # Statische Code-Analyse (Bandit)
+    - bandit -r . -ll -f json -o bandit-report.json || true
+    - bandit -r . -ll 
+    # Dependency-Schwachstellen (pip-audit)
+    - pip-audit --format json -o pip-audit-report.json || true
+  artifacts:
+    when: always
+    paths:
+      - bandit-report.json
+      - pip-audit-report.json
+    expire_in: 1 month
+  allow_failure: false

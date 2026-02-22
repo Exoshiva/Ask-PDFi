@@ -1,0 +1,10 @@
+# --- SECURITY ---
+# Ignoriert API-Keys und Passwoerter
+.env
+
+# --- ENVIRONMENTS & CACHE ---
+# Ignoriert die lokale Entwicklungsumgebung und Python-Zwischenspeicher
+venv/
+__pycache__/
+
+.DS_Store
