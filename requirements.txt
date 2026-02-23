@@ -1,4 +1,6 @@
 streamlit
+altair
+pandas
 pypdf
 langchain
 langchain-community
