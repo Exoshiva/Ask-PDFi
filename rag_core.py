@@ -45,7 +45,7 @@ def get_rag_answer(vectorstore, user_question):
     """
     # A. EIGENES LLM: Llama 3 via Groq
     # Wir nutzen ein Open-Source-Modell über die extrem schnelle Groq-Infrastruktur.
-    llm = ChatGroq(temperature=0, model_name="meta-llama/llama-4-scout-17b-16e-instruct")
+    llm = ChatGroq(temperature=0, model_name="llama3-8b-8192")
     
     # B. Wie soll sich die KI verhalten? (Der System Prompt)
     system_prompt = (
