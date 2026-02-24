@@ -1,4 +1,4 @@
-# <img src="assets/pdfi-avatar.svg" width="50" height="50" alt="PDF'i Logo" align="center"> PDF'i - Intelligent PDF Assistant
+# <img src="assets/pdfi-avatar.svg" width="50" height="50" alt="PDFi Logo" align="center"> PDF'i - Intelligent PDF Assistant
 
 Ein smartes RAG-System (Retrieval-Augmented Generation), entwickelt als Proof-of-Concept für die interaktive Analyse von Dokumenten. 
 
