@@ -8,6 +8,13 @@ Dieses Projekt vereint modernes UI/UX-Design mit leistungsstarker KI-Technologie
   <img src="assets/app-preview.jpg" alt="PDF'i Chat Interface Screenshot" width="800">
 </div>
 
+## 🏗️ Architektur & Design
+Die Anwendung folgt einer klaren Trennung zwischen UI-Steuerung und Geschäftslogik (RAG). 
+
+<div align="center">
+  <img src="assets/pdfi-uml.png" alt="UML Klassendiagramm" width="600">
+</div>
+
 ## 🛠️ Tech-Stack
 
 * **Frontend:** Streamlit (mit Custom SVG-Branding und Base64-Injektion)
@@ -26,31 +33,33 @@ Dieses Projekt vereint modernes UI/UX-Design mit leistungsstarker KI-Technologie
 ## 🚀 Lokale Installation & Start
 
 1. **Repository klonen:**
-   ```bash
-   git clone [https://github.com/DEIN_USERNAME/PDFi.git](https://github.com/DEIN_USERNAME/PDFi.git)
-   cd PDFi
-Abhängigkeiten installieren:
+```bash
+git clone [https://github.com/DEIN_USERNAME/PDFi.git](https://github.com/DEIN_USERNAME/PDFi.git)
+cd PDFi
+```
 
-Bash
+2. **Abhängigkeiten installieren:**
+```bash
 pip install -r requirements.txt
-Umgebungsvariablen setzen:
-Erstelle eine .env Datei im Hauptverzeichnis und füge deinen Groq API Key ein:
+```
 
-Plaintext
+3. **Umgebungsvariablen setzen:**
+Erstelle eine `.env` Datei im Hauptverzeichnis und füge deinen Groq API Key ein:
+```text
 GROQ_API_KEY=dein_groq_api_key_hier
-App starten:
+```
 
-Bash
+4. **App starten:**
+```bash
 streamlit run src/app.py
-📖 Roadmap & Status
-[x] Projekt-Setup & Architekturplanung
+```
 
-[x] Implementierung der RAG-Logik (rag_core.py)
+## 📖 Roadmap & Status
+* ✅ **Projekt-Setup & Architekturplanung**
+* ✅ **Implementierung der RAG-Logik** (`rag_core.py`)
+* ✅ **UI-Entwicklung & Custom Branding** (`app.py`)
+* ✅ **Deployment auf Hugging Face Spaces**
+* ⬜ **Erweiterung um Multi-Dokumenten-Unterstützung** (Future Feature)
 
-[x] UI-Entwicklung & Custom Branding (app.py)
-
-[x] Deployment auf Hugging Face Spaces
-
-[ ] Erweiterung um Multi-Dokumenten-Unterstützung (Future Feature)
-
-Design meets Code. Entwickelt mit Fokus auf Funktionalität und User Experience.
+---
+*Design meets Code. Entwickelt mit Fokus auf Funktionalität und User Experience.*
