@@ -1,11 +1,11 @@
-# <img src="assets/pdfi-avatar.svg" width="50" height="50" alt="PDFi Logo" align="center"> PDF'i - Intelligent PDF Assistant
+# <img src="assets/pdfi-avatar.svg" width="50" height="50" alt="PDFi Logo" align="center"> PDFi - Intelligent PDF Assistant
 
 Ein smartes RAG-System (Retrieval-Augmented Generation), entwickelt als Proof-of-Concept für die interaktive Analyse von Dokumenten. 
 
 Dieses Projekt vereint modernes UI/UX-Design mit leistungsstarker KI-Technologie und entstand im Rahmen meiner Spezialisierung zum Fachinformatiker für Anwendungsentwicklung (FIAE). Der Fokus liegt auf einer nahtlosen User Experience, sauberem Branding und einer hochperformanten Backend-Architektur.
 
 <div align="center">
-  <img src="assets/app-preview.jpg" alt="PDF'i Chat Interface Screenshot" width="800">
+  <img src="assets/app-preview.jpg" alt="PDFi Chat Interface Screenshot" width="800">
 </div>
 
 ## 🏗️ Architektur & Design
@@ -27,7 +27,7 @@ Die Anwendung folgt einer klaren Trennung zwischen UI-Steuerung und Geschäftslo
 
 * 📄 **Smarte PDF-Verarbeitung:** Automatisches Text-Splitting und lokale Vektorisierung.
 * ⚡ **High-Speed Inference:** Blitzschnelle Antworten auf komplexe Dokumentenfragen durch die Anbindung an die Groq API.
-* 🎨 **Custom UI/UX:** Sauberes, responsives Interface. Das Maskottchen "PDF'i" wurde als skalierbare Vektorgrafik (SVG) eigens für dieses Projekt entworfen und nahtlos integriert.
+* 🎨 **Custom UI/UX:** Sauberes, responsives Interface. Das Maskottchen "PDFi" wurde als skalierbare Vektorgrafik (SVG) eigens für dieses Projekt entworfen und nahtlos integriert.
 * 🔒 **Sicherheit & Architektur:** Die Dokumentenverarbeitung (Embeddings) und die FAISS-Vektordatenbank laufen im Arbeitsspeicher, API-Keys werden sicher über Umgebungsvariablen (Secrets) verwaltet.
 
 ## 🚀 Lokale Installation & Start
