@@ -12,7 +12,7 @@ Dieses Projekt vereint modernes UI/UX-Design mit leistungsstarker KI-Technologie
 Die Anwendung folgt einer klaren Trennung zwischen UI-Steuerung und Geschäftslogik (RAG). 
 
 <div align="center">
-  <img src="assets/pdfi-uml.png" alt="UML Klassendiagramm" width="600">
+  <img src="assets/pdfi-uml.svg" alt="UML Klassendiagramm" width="600">
 </div>
 
 ## 🛠️ Tech-Stack
